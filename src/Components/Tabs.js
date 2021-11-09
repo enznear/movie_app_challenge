@@ -5,6 +5,11 @@ import YoutubeEmbed from "./YoutubeEmbed";
 import ProductionCompany from "./ProductionCompany";
 import Season from "./Season";
 
+const VideoContainer = styled.div`
+    margin-bottom: 20px;
+    display: flex;    
+    flex-wrap: wrap;
+`;
 
 const Container = styled.div`
     margin-bottom: 20px;
@@ -29,13 +34,15 @@ const Tabs = (props) => {
     if (props.segment === "videos"){
         const videos = props.result.videos.results; 
         return (
-        <>        
+        <>  
+          <VideoContainer>    
             {videos.map(video => {                
                 return (
               <YoutubeEmbed
               yt_key={video.key}                
               />
             )})}
+          </VideoContainer>  
         </>);
     }  else if (props.segment === "productions"){
         const production_companies = props.result.production_companies;
