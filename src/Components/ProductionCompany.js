@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -29,10 +29,10 @@ const Title = styled.span`
   margin-bottom: 3px;
 `;
 
-const Year = styled.span`
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.5);
-`;
+// const Year = styled.span`
+//   font-size: 10px;
+//   color: rgba(255, 255, 255, 0.5);
+// `;
 
 const ProductionCompany = ({ logo_path, name }) => (  
     <Container>

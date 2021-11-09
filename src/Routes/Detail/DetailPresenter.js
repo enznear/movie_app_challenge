@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Helmet from "react-helmet";
@@ -71,24 +71,24 @@ const Overview = styled.p`
   width: 50%;
 `;
 
-const InsideMenu = styled("div")`
-  margin: 20px 0px;
-`;
+// const InsideMenu = styled("div")`
+//   margin: 20px 0px;
+// `;
 
-const List = styled("ul")`
-  display: flex;
-`;
+// const List = styled("ul")`
+//   display: flex;
+// `;
 
-const Button = styled.span`
-  margin-right: 20px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: 2px solid #1abc9c;
-  padding: 5px;
-  border-radius: 3px;
-  background-color: ${props => (props.active ? "white" : "black")};
-  color: ${props => (props.active ? "black" : "white")};
-`;
+// const Button = styled.span`
+//   margin-right: 20px;
+//   text-transform: uppercase;
+//   font-weight: 600;
+//   border: 2px solid #1abc9c;
+//   padding: 5px;
+//   border-radius: 3px;
+//   background-color: ${props => (props.active ? "white" : "black")};
+//   color: ${props => (props.active ? "black" : "white")};
+// `;
 
 const DetailPresenter = ({ result, loading, error, pathname, isMovie, id }) =>
   loading ? (

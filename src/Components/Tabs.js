@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import styled from "styled-components";
 import YoutubeEmbed from "./YoutubeEmbed";
 import ProductionCompany from "./ProductionCompany";
@@ -18,15 +18,14 @@ const Title = styled.div`
   margin-bottom: 10px;
 `;
 
-const Grid = styled.div`
-  margin-top: 25px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 125px);
-  grid-gap: 25px;
-`;
+// const Grid = styled.div`
+//   margin-top: 25px;
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, 125px);
+//   grid-gap: 25px;
+// `;
 
-const Tabs = (props) => {
-    {console.log(props)};
+const Tabs = (props) => {    
     if (props.segment === "videos"){
         const videos = props.result.videos.results; 
         return (

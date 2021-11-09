@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -18,13 +18,13 @@ const Image = styled.div`
   transition: opacity 0.1s linear;
 `;
 
-const Rating = styled.span`
-  bottom: 5px;
-  right: 5px;
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.1s linear;
-`;
+// const Rating = styled.span`
+//   bottom: 5px;
+//   right: 5px;
+//   position: absolute;
+//   opacity: 0;
+//   transition: opacity 0.1s linear;
+// `;
 
 const ImageContainer = styled.div`
   margin-bottom: 5px;
